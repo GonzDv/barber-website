@@ -11,14 +11,14 @@ import Footer from './Footer.jsx';
 export default function Layout({ children }) {
   return (
     <>
-      <Header />
+      <main>
       <Hero />
-      <AboutMe />
       <Services />
+      <AboutMe />
       <Products />
       <Location />
       <Contact />
-      <Footer />
+      </main>
       {children}
     </>
   );

@@ -1,19 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout.jsx';
+
 import Home from './pages/Home.jsx';
 import Book from './pages/Book.jsx';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
-    <Layout>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Book" element={<Book />} />
         </Routes>
+        <Footer/>
       </Router>
-    </Layout>
+      
   );
 }
 
