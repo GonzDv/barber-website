@@ -17,7 +17,7 @@ export default function BookForm() {
                     type="text"
                     name="fName"
                     id="fName"
-                    placeholder="First Name"
+                    placeholder="Nombre"
                     class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-black focus:shadow-md"
                   />
                 </div>
@@ -34,7 +34,7 @@ export default function BookForm() {
                     type="text"
                     name="lName"
                     id="lName"
-                    placeholder="Last Name"
+                    placeholder="Apellido"
                     class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-black focus:shadow-md"
                   />
                 </div>

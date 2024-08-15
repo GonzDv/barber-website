@@ -1,3 +1,5 @@
+import BarberCut from '../images/barber-img.jpg'
+
 export default function Services() {
   return (
     <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-[#3D3D43]">
@@ -54,7 +56,7 @@ export default function Services() {
             </ul>
           </div>
           <img
-            src="https://generated.vusercontent.net/placeholder.svg"
+            src={BarberCut}
             width="550"
             height="310"
             alt="Servicios de Barbería"
