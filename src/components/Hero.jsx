@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './commons/Button.jsx';
+import BarberChair from '../images/barber-chair.png';
 import Link from './commons/Link.jsx';
 
 export default function Hero() {
@@ -35,7 +35,7 @@ export default function Hero() {
           </div>
         </div>
         <img
-          src="../src/images/barber-chair.png"
+          src={BarberChair}
           width="800"
           height="600"
           alt="Barbería"
