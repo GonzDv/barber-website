@@ -6,7 +6,7 @@ export default function NoPage() {
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2024{' '}
             <a href="#" className="hover:underline">
-              Barber Mike
+              TAWA Barber
             </a>
             . All Rights Reserved.
           </span>
@@ -22,7 +22,7 @@ export default function NoPage() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <a href="https://www.instagram.com/migueldetorres013?igsh=MXA3ZGh3Z2p6NnBjeg==" className="hover:underline me-4 md:me-6">
                 Instagram
               </a>
             </li>

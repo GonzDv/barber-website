@@ -35,7 +35,7 @@ export default function Hero() {
           </div>
         </div>
         <img
-          src="https://generated.vusercontent.net/placeholder.svg"
+          src="../src/images/barber-chair.png"
           width="800"
           height="600"
           alt="Barbería"
