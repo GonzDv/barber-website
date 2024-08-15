@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "./commons/Link";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,22 +29,38 @@ export default function Header() {
               className="navbar-burger flex items-center text-white p-3"
             >
               <svg
-                className="block h-4 w-4 fill-current"
+                className={`block h-4 w-4 fill-current ${
+                  isMenuOpen ? "hidden" : ""
+                }`}
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <title>Mobile menu</title>
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
               </svg>
+
+              <svg
+                className={` h-4 w-4 fill-current ${
+                  isMenuOpen ? "" : "hidden"
+                }`}
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 50 50"
+              >
+                <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
+              </svg>
             </button>
           </div>
         </div>
-        <nav className={`${isMenuOpen ? "hidden" : ""} lg:block w-2/4`}>
+        <nav className={`${isMenuOpen ? "" : "hidden"} lg:block w-2/4`}>
           {" "}
           <div className="flex-col lg:flex-row flex items-center gap-4 sm:gap-6 py-4">
-            <Link to="/Book" 
+            <Link
+              to="/Book"
               className="text-black bg-white hover:bg-black hover:text-white rounded-lg py-2 px-4 hover:border border text-center"
-              
             >
               Reservar Cita
             </Link>
