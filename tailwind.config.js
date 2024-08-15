@@ -4,7 +4,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      display: ['"Manrope"', 'sans-serif'],
+    }
+    
   },
   plugins: [],
 }
