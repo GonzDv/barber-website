@@ -1,6 +1,6 @@
 import React from "react";
-import BookForm from "../components/Recervar-cita/BookForm.jsx";
-export default function Book() {
+import BookForm from "../components/Recervar-cita/ReservaForm.jsx";
+export default function Reservar() {
   return (
     <>
       <main className="lg:h-screen  container mx-auto mt-6">

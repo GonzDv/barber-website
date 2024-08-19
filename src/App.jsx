@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home.jsx';
-import Book from './pages/Book.jsx';
+import Reserva from './pages/Reserva.jsx';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 
@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Book" element={<Book />} />
+          <Route path="/Reservar-Cita" element={<Reserva />} />
           <Route path="*" element={<h1>Opp... Not Found</h1>} />
         </Routes>
         <Footer/>

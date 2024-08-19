@@ -55,11 +55,12 @@ export default function Header() {
             </button>
           </div>
         </div>
+        
         <nav className={`${isMenuOpen ? "" : "hidden"} lg:block w-2/4`}>
           {" "}
           <div className="flex-col lg:flex-row flex items-center gap-4 sm:gap-6 py-4">
             <Link
-              to="/Book"
+              to="/Reservar-Cita"
               className="text-black bg-white hover:bg-black hover:text-white rounded-lg py-2 px-4 hover:border border text-center"
             >
               Reservar Cita
